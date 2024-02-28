@@ -1,19 +1,19 @@
-.accordion {
+.accordian {
     background: #EFEFEF;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     border-radius: 6px;
 }
 
-.accordion .item-title {
+.accordian .item-title {
     cursor: pointer;
-    padding: 12px;
-    border-bottom: 1px solid #dddddd;
+    padding: 11px;
+    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.accordion .item-title:after {
+.accordian .item-title::after {
     width: 10px;
     height: 10px;
     border-bottom: 2px solid #a7a7a7;
@@ -25,22 +25,22 @@
 }
 
 
-.accordion .item-title.open {
-    background: #dddddd;
+.accordian .item-title.open {
+    background: #ddd;
 }
 
-.accordion .item-title.open::after {
+.accordian .item-title.open::after {
     transform: rotate(-135deg) translateX(50%);
 }
 
-.accordion .item-content {
+.accordian .item-content {
     display: none;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     padding: 10px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
 }
 
-.accordion .item-title.open+.item-content {
+.accordian .item-title.open+.item-content {
     display: grid;
 }

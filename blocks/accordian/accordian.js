@@ -1,18 +1,18 @@
-function decorateAccordion(el) {
-  const titles = el.querySelectorAll(":scope > div:nth-child(odd)");
+function decorateaccordian(el) {
+  const titles = el.querySelectorAll(':scope > div:nth-child(odd)');
   titles.forEach((title) => {
-    // Add a class to the title container
-    title.classList.add("item-title");
+    // Add a class to the title containe
+    title.classList.add('item-title');
     // Add a class to the content
-    title.nextElementSibling.classList.add("item-content");
+    title.nextElementSibling.classList.add('item-content');
     // Add a click handler to open the content
-    title.addEventListener("click", () => {
-      title.classList.toggle("open");
+    title.addEventListener('click', () => {
+      title.classList.toggle('open');
     });
   });
 }
 
-const els = document.querySelectorAll(".accordion");
+const els = document.querySelectorAll('.accordian');
 els.forEach((el) => {
-  decorateAccordion(el);
+  decorateaccordian(el);
 });
